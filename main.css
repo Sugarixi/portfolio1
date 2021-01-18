@@ -61,15 +61,13 @@ a {
     justify-content: space-evenly;
 }
 
-.Socials {
-    background-color: var(--palette1);
-    position: absolute;
-    right: 0;
-    top: 10vh;
-    padding: 1vh 1vw;
-    display: none;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
+.SocialsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.SocialsContainer a {
+    padding: 4px !important;
 }
 
 .fa-facebook {
@@ -144,26 +142,6 @@ a {
     text-shadow: 1px 1px 2px var(--palette3), 1px 1px 2px var(--palette3);   
 }
 
-.Menu a {
-    position: relative;
-    text-align: center;
-}
-
-.Menu a img{
-    max-height: 9vh;
-    max-width: 9vw;
-}
-
-.Menu a span{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--palette2);
-    font-size: 1.2rem;
-
-}
-
 .ModeToggle {
     float: right;
 }
@@ -173,6 +151,9 @@ a {
     text-align: center;
 }
 
+.menu li {
+    padding-right: 3vw;
+}
 
 .ModeToggle a img{
     max-height: 9vh;
@@ -270,6 +251,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .PortfolioImg img {
@@ -277,6 +259,10 @@ a {
     width: unset;
     height: unset;
     border: 3px solid var(--palette2);
+}
+
+.PortfolioImg img:hover {
+    opacity: 0.5;
 }
 
 .BottomImg img{
@@ -344,6 +330,7 @@ a {
   position: absolute;
   top: 0;
   padding-right: 1vw;
+  z-index: 3;
 }
 
 .close:hover,
@@ -363,6 +350,7 @@ a {
     z-index: 2;
     position: relative;
     height: 10vh;
+    text-align: center;
 }
 
 .CloudContainer span {
@@ -402,7 +390,8 @@ a {
     height: 5vh;
     color: var(--palette2);
     border: 2px solid var(--palette2);
-    font-size: 2rem;
+    font-size: 2em;
+    background-color: var(--palette6);
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -425,6 +414,7 @@ a {
     color: var(--palette2);
     border: 2px solid var(--palette2);
     font-size: 2rem;
+    background-color: var(--palette6);
 }
 
 .ButtonsContainer {
@@ -437,6 +427,7 @@ a {
     color: var(--palette2);
     border: 2px solid var(--palette2);
     font-size: 2rem;
+    background-color: var(--palette6);
 }
 
 img {
@@ -508,6 +499,9 @@ img {
     }
     .ModeToggle {
         padding-top: 10px;
+    }
+    .HomeContent {
+        font-size: min(6vw,6vh);
     }
 }
 
