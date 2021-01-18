@@ -18,7 +18,7 @@
   
   .header li a {
     display: block;
-    padding: 20px 20px;
+    padding: 0px 20px;
     text-decoration: none;
   }
   
@@ -127,6 +127,11 @@
       display: none;
     }
   }
+
+.menu {
+  display: flex;
+  align-items: center;
+}
   
 .menu a {
     position: relative;
@@ -149,5 +154,10 @@
 @media (max-width: 70em) {
     .menu a img {
         max-width: 20vw;
+    }
+
+    .menu {
+      display: block;
+      align-items: unset;
     }
 }
