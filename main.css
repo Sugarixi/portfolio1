@@ -435,61 +435,6 @@ img {
     height: 100%;
 }
 
-
-/********loading screen.... yearight***********/
-.stage {
-    display: flex;
-    height: 75%;
-    width: 100%;
-}
-.box {
-    align-self: flex-end;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    margin: 0 auto 0 auto;
-    transform-origin: bottom;
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    flex-direction: column;
-    font-size: 2rem;
-    color: var(--palette2);
-    font-size: 2rem;
-    text-shadow: 1px 1px 2px var(--palette3), 1px 1px 2px var(--palette3);
-}
-.box img {
-    height: 50%;
-    width: 50%;
-}
-.bounce-4 {
-    animation-name: bounce-4;
-    animation-timing-function: ease;
-}
-@keyframes bounce-4 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    25%  { transform: scale(1.1,.9) translateY(0); }
-    55%  { transform: scale(.9,1.1) translateY(-100px); }
-    75%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
-}
-
-.noDisplay {
-    display: none;
-}
-
-.websiteContent {
-    animation: fadeIn ease 1s;
-    -webkit-animation: fadeIn ease 1s;
-    -moz-animation: fadeIn ease 1s;
-    -o-animation: fadeIn ease 1s;
-    -ms-animation: fadeIn ease 1s;
-}
-
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-    }
-
 @media (max-width: 70em) {
     .CharacterPic {
         display: none;

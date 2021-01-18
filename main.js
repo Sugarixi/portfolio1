@@ -1,13 +1,5 @@
 $(document).ready(function() {
 
-  //init "loading"
-  setTimeout(function() {
-    $(".websiteContent").toggleClass("noDisplay");
-    $(".stage").toggleClass("noDisplay");
-    $(".sparkles").sparkleh({always:false});
-      $(".sparkles-always").sparkleh({always:true});
-  }, 0)
-
   //init socials toggle
   $("#hrfSocials").click(function() {
     $(".Socials").slideToggle( "slow", function() {
