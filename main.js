@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-  $(".sparkles").sparkleh({always:false});
-  $(".sparkles-always").sparkleh({always:true});
+  setTimeout(function() {
+    $(".sparkles").sparkleh({always:false});
+    $(".sparkles-always").sparkleh({always:true});
+  }, 500);
+
 
   //init socials toggle
   $("#hrfSocials").click(function() {
