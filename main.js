@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+  $(".sparkles").sparkleh({always:false});
+  $(".sparkles-always").sparkleh({always:true});
+
   //init socials toggle
   $("#hrfSocials").click(function() {
     $(".Socials").slideToggle( "slow", function() {
