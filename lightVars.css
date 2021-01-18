@@ -1,0 +1,11 @@
+:root {
+    --palette1: #FFDF9B;
+    --palette2: #F76E88;
+    --palette3: #FFBBC7;
+    --palette4: #B6DFFF;
+    --palette5: #E4F3FF;
+    --palette6: #FFFFFF;
+    --palette6op: #FFFFFF90;
+    --bgWallpaper: url("images/wallpaperLight.png");
+    --bgContactme: url("images/contactLight.png");
+  }
